@@ -1,0 +1,9 @@
+# Example secret names for this Worker.
+# Copy to `.dev.vars` and fill in real values for local `wrangler dev`.
+# `.dev.vars` is gitignored AND blocked from Claude in .claude/settings.json.
+#
+# For production, set secrets directly in Cloudflare:
+#   wrangler secret put SECRET_NAME
+
+# EXAMPLE_API_KEY=
+# DATABASE_URL=
