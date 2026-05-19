@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "generatedAt": "2026-05-19T08:12:32Z",
+  "ref": "main",
+  "target": "claude-code",
+  "files": [
+    "general-engineering-practice/SKILL.md",
+    "typescript-strictness/SKILL.md",
+    "astro-conventions/SKILL.md",
+    "tailwind-v4/SKILL.md",
+    "cloudflare-workers/SKILL.md",
+    "astro-content-collections/SKILL.md"
+  ]
+}
