@@ -1,15 +1,16 @@
 import eslint from "@eslint/js";
+import { defineConfig } from "eslint/config";
 import tseslint from "typescript-eslint";
 import astro from "eslint-plugin-astro";
 import prettier from "eslint-config-prettier";
 
-export default tseslint.config(
+export default defineConfig([
 	{
 		ignores: ["dist/", ".astro/", ".wrangler/", "node_modules/", "worker-configuration.d.ts"],
 	},
 	eslint.configs.recommended,
-	...tseslint.configs.strictTypeChecked,
-	...tseslint.configs.stylisticTypeChecked,
+	tseslint.configs.strictTypeChecked,
+	tseslint.configs.stylisticTypeChecked,
 	{
 		languageOptions: {
 			parserOptions: {
@@ -18,7 +19,7 @@ export default tseslint.config(
 			},
 		},
 	},
-	...astro.configs.recommended,
+	astro.configs.recommended,
 	{
 		files: ["**/*.astro"],
 		extends: [tseslint.configs.disableTypeChecked],
@@ -28,4 +29,4 @@ export default tseslint.config(
 		extends: [tseslint.configs.disableTypeChecked],
 	},
 	prettier,
-);
+]);
