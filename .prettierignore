@@ -1,0 +1,8 @@
+dist/
+.astro/
+.wrangler/
+.claude/
+.vscode/
+node_modules/
+pnpm-lock.yaml
+worker-configuration.d.ts
